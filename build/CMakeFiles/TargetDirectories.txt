@@ -1,0 +1,5 @@
+C:/Users/ryans/Downloads/assignment/build/CMakeFiles/model.dir
+C:/Users/ryans/Downloads/assignment/build/CMakeFiles/interactive.dir
+C:/Users/ryans/Downloads/assignment/build/CMakeFiles/testrunner.dir
+C:/Users/ryans/Downloads/assignment/build/CMakeFiles/edit_cache.dir
+C:/Users/ryans/Downloads/assignment/build/CMakeFiles/rebuild_cache.dir
