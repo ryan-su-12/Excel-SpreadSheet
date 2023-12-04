@@ -56,42 +56,53 @@ void findTypeCell(Cell *cell){
     
 }
 
-int computeFormula(Cell *cell, double *value){
-    double sum = 0;
-    int oldie = 1;
-    int plus = 0;
-    while ((*cell).cellContent.text[plus] != '\0'){
-        char sell[3];
-        for(int i = plus+1; 1; i ++){
-            if ((*cell).cellContent.text[i] == '+' || (*cell).cellContent.text[i] == '\0'){
+
+int computeFormula(Cell *cell, double *value) {
+    double sum = 0;  // Variable to store the sum of cell values
+    int oldie = 1;    // Index to keep track of the starting position of the current cell value
+    int plus = 0;     // Index to find the position of the next '+' character in the cell content
+
+    // Iterate through the cell content until the end is reached
+    while ((*cell).cellContent.text[plus] != '\0') {
+        char sell[3];  // Array to store the characters representing the current cell reference
+
+        // Find the position of the next '+' character or the end of the cell content
+        for (int i = plus + 1; 1; i++) {
+            if ((*cell).cellContent.text[i] == '+' || (*cell).cellContent.text[i] == '\0') {
                 plus = i;
                 break;
-            } 
+            }
         }
 
-        
-        for (int i = oldie ; i < plus; i++ ){
-            if ((*cell).cellContent.text[i] != ' ' && (*cell).cellContent.text[i] != '+'){
+        // take the characters representing the current cell reference
+        for (int i = oldie; i < plus; i++) {
+            if ((*cell).cellContent.text[i] != ' ' && (*cell).cellContent.text[i] != '+') {
                 sell[0] = (*cell).cellContent.text[i];
-                sell[1] = (*cell).cellContent.text[i+1];
-                sell[2] = (*cell).cellContent.text[i+2];
+                sell[1] = (*cell).cellContent.text[i + 1];
+                sell[2] = (*cell).cellContent.text[i + 2];
                 break;
-
             }
-        } 
-        oldie = plus;
+        }
+
+        oldie = plus;  // Update the starting position for the next iteration
         double sellValue;
-        if (!getValue(sell, &sellValue)) return 0;
-        sum += sellValue;
+
+        // Call the 'getValue' function to get the number value of the current cell "sell"
+        if (!getValue(sell, &sellValue))
+            return 0;  // Return 0 if 'getValue' fails
+
+        sum += sellValue;  // Add the obtained value to the overall sum
     }
-    *value = sum;
-    return 1;
 
-
+    *value = sum;  // Store the final sum in the 'value' variable
+    return 1;      // Return 1 to indicate successful computation
 }
+
 
 int getValue(char *text, double *value ){
     int row, col;
+
+    //columns are assigned to letters on the spreadsheet
     if (text[0] == 'A'){
         col = 0;
     } else if (text[0] == 'B'){
@@ -110,7 +121,7 @@ int getValue(char *text, double *value ){
         return 0;
     }
 
-
+    // rows are assigned to numbers on the spreadsheet
     if (text[1] == '1' && text[2] == '0'){
         row = 9;
     } else if (text[1] == '1'){
@@ -135,6 +146,8 @@ int getValue(char *text, double *value ){
         return 0;
     }
 
+    //Determines how to procced based on the textual value of the cell
+
     if (cells[row][col].cellType == Text) {
         return 0;
     } 
@@ -142,6 +155,8 @@ int getValue(char *text, double *value ){
         *value = cells[row][col].cellContent.number;
         return 1;
     }
+
+    
     if  (cells[row][col].cellType = Formula){
         return computeFormula(&(cells[row][col]), value);
     }
@@ -149,6 +164,8 @@ int getValue(char *text, double *value ){
 }
 
 char *cellText(Cell* cell) {
+
+
     if ((*cell).cellType == Text){
         char* copy = (char*)malloc(128*sizeof(char));
         strcpy(copy, (*cell).cellContent.text);
@@ -157,12 +174,16 @@ char *cellText(Cell* cell) {
     if ((*cell).cellType == Formula){
         char* string = (char*)malloc(128*sizeof(char));
         double value;
+
+        //calculates the number value of the cell
         if (!computeFormula(cell, &value)) {
             return "ERROR, FORMULA INVALID";
         }
+        //converts numbers to a string
         sprintf(string,"%f", value);
         return string;
     }
+
 
     char* string = (char*)malloc(128*sizeof(char));
     sprintf(string,"%f", (*cell).cellContent.number);
@@ -171,10 +192,11 @@ char *cellText(Cell* cell) {
 
 
 }
-
 void updateFormulas() {
     for (int row = 0; row < MAX_ROWS; ++row) {
         for (int col = 0; col < MAX_COLS; ++col) {
+            
+            //check if the cell contains a formula
             if(cells[row][col].cellType == Formula) {
                 update_cell_display(row,col, cellText(&(cells[row][col])));
             }

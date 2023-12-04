@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ryans\Downloads\assignment
+CMAKE_SOURCE_DIR = "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ryans\Downloads\assignment\build
+CMAKE_BINARY_DIR = "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/model.dir/depend.make
@@ -69,18 +69,18 @@ include CMakeFiles/model.dir/progress.make
 include CMakeFiles/model.dir/flags.make
 
 CMakeFiles/model.dir/model.c.obj: CMakeFiles/model.dir/flags.make
-CMakeFiles/model.dir/model.c.obj: C:/Users/ryans/Downloads/assignment/model.c
+CMakeFiles/model.dir/model.c.obj: C:/Users/ryans/OneDrive/Desktop/APSC\ 103\ GUI/ELEC278_final_project/model.c
 CMakeFiles/model.dir/model.c.obj: CMakeFiles/model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ryans\Downloads\assignment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/model.dir/model.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/model.dir/model.c.obj -MF CMakeFiles\model.dir\model.c.obj.d -o CMakeFiles\model.dir\model.c.obj -c C:\Users\ryans\Downloads\assignment\model.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/model.dir/model.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/model.dir/model.c.obj -MF CMakeFiles\model.dir\model.c.obj.d -o CMakeFiles\model.dir\model.c.obj -c "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\model.c"
 
 CMakeFiles/model.dir/model.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/model.dir/model.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ryans\Downloads\assignment\model.c > CMakeFiles\model.dir\model.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\model.c" > CMakeFiles\model.dir\model.c.i
 
 CMakeFiles/model.dir/model.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/model.dir/model.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ryans\Downloads\assignment\model.c -o CMakeFiles\model.dir\model.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\model.c" -o CMakeFiles\model.dir\model.c.s
 
 model: CMakeFiles/model.dir/model.c.obj
 model: CMakeFiles/model.dir/build.make
@@ -95,6 +95,6 @@ CMakeFiles/model.dir/clean:
 .PHONY : CMakeFiles/model.dir/clean
 
 CMakeFiles/model.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ryans\Downloads\assignment C:\Users\ryans\Downloads\assignment C:\Users\ryans\Downloads\assignment\build C:\Users\ryans\Downloads\assignment\build C:\Users\ryans\Downloads\assignment\build\CMakeFiles\model.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles\model.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/model.dir/depend
 

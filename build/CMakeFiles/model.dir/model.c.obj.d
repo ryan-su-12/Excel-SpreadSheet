@@ -1,8 +1,8 @@
 CMakeFiles/model.dir/model.c.obj: \
- C:\Users\ryans\Downloads\assignment\model.c \
- C:\Users\ryans\Downloads\assignment\model.h \
- C:\Users\ryans\Downloads\assignment\defs.h \
- C:\Users\ryans\Downloads\assignment\interface.h \
+ C:\Users\ryans\OneDrive\Desktop\APSC\ 103\ GUI\ELEC278_final_project\model.c \
+ C:\Users\ryans\OneDrive\Desktop\APSC\ 103\ GUI\ELEC278_final_project\model.h \
+ C:\Users\ryans\OneDrive\Desktop\APSC\ 103\ GUI\ELEC278_final_project\defs.h \
+ C:\Users\ryans\OneDrive\Desktop\APSC\ 103\ GUI\ELEC278_final_project\interface.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \

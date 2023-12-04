@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ryans/Downloads/assignment
+# Install script for directory: C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ryans/Downloads/assignment/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

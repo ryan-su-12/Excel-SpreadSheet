@@ -1,5 +1,5 @@
-C:/Users/ryans/Downloads/assignment/build/CMakeFiles/model.dir
-C:/Users/ryans/Downloads/assignment/build/CMakeFiles/interactive.dir
-C:/Users/ryans/Downloads/assignment/build/CMakeFiles/testrunner.dir
-C:/Users/ryans/Downloads/assignment/build/CMakeFiles/edit_cache.dir
-C:/Users/ryans/Downloads/assignment/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/CMakeFiles/model.dir
+C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/CMakeFiles/interactive.dir
+C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/CMakeFiles/testrunner.dir
+C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/CMakeFiles/edit_cache.dir
+C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/CMakeFiles/rebuild_cache.dir

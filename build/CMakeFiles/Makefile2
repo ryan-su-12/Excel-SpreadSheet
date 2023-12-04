@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ryans\Downloads\assignment
+CMAKE_SOURCE_DIR = "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ryans\Downloads\assignment\build
+CMAKE_BINARY_DIR = "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -84,14 +84,14 @@ clean: CMakeFiles/testrunner.dir/clean
 CMakeFiles/model.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\model.dir\build.make CMakeFiles/model.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\model.dir\build.make CMakeFiles/model.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ryans\Downloads\assignment\build\CMakeFiles --progress-num=3 "Built target model"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" --progress-num=3 "Built target model"
 .PHONY : CMakeFiles/model.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/model.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ryans\Downloads\assignment\build\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/model.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ryans\Downloads\assignment\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" 0
 .PHONY : CMakeFiles/model.dir/rule
 
 # Convenience name for target.
@@ -110,14 +110,14 @@ CMakeFiles/model.dir/clean:
 CMakeFiles/interactive.dir/all: CMakeFiles/model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interactive.dir\build.make CMakeFiles/interactive.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interactive.dir\build.make CMakeFiles/interactive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ryans\Downloads\assignment\build\CMakeFiles --progress-num=1,2 "Built target interactive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" --progress-num=1,2 "Built target interactive"
 .PHONY : CMakeFiles/interactive.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/interactive.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ryans\Downloads\assignment\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/interactive.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ryans\Downloads\assignment\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" 0
 .PHONY : CMakeFiles/interactive.dir/rule
 
 # Convenience name for target.
@@ -136,14 +136,14 @@ CMakeFiles/interactive.dir/clean:
 CMakeFiles/testrunner.dir/all: CMakeFiles/model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testrunner.dir\build.make CMakeFiles/testrunner.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testrunner.dir\build.make CMakeFiles/testrunner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ryans\Downloads\assignment\build\CMakeFiles --progress-num=4,5,6 "Built target testrunner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" --progress-num=4,5,6 "Built target testrunner"
 .PHONY : CMakeFiles/testrunner.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testrunner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ryans\Downloads\assignment\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/testrunner.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ryans\Downloads\assignment\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" 0
 .PHONY : CMakeFiles/testrunner.dir/rule
 
 # Convenience name for target.

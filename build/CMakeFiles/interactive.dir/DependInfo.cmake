@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ryans/Downloads/assignment/interface.c" "CMakeFiles/interactive.dir/interface.c.obj" "gcc" "CMakeFiles/interactive.dir/interface.c.obj.d"
+  "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/interface.c" "CMakeFiles/interactive.dir/interface.c.obj" "gcc" "CMakeFiles/interactive.dir/interface.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

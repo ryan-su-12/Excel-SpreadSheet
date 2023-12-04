@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/ryans/Downloads/assignment/build"
+			"value" : "c:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -167,10 +167,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/mingw64/bin/gcc.exe"
 		},
 		{
@@ -455,7 +455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ryans/Downloads/assignment/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/ryans/Downloads/assignment"
+			"value" : "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1175,7 +1175,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ryans/Downloads/assignment/build"
+			"value" : "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build"
 		},
 		{
 			"name" : "assignment_IS_TOP_LEVEL",
@@ -1199,7 +1199,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ryans/Downloads/assignment"
+			"value" : "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project"
 		}
 	],
 	"kind" : "cache",

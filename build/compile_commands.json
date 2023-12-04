@@ -1,26 +1,26 @@
 [
 {
-  "directory": "C:/Users/ryans/Downloads/assignment/build",
-  "command": "C:\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\model.dir\\model.c.obj -c C:\\Users\\ryans\\Downloads\\assignment\\model.c",
-  "file": "C:/Users/ryans/Downloads/assignment/model.c",
+  "directory": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\model.dir\\model.c.obj -c \"C:\\Users\\ryans\\OneDrive\\Desktop\\APSC 103 GUI\\ELEC278_final_project\\model.c\"",
+  "file": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/model.c",
   "output": "CMakeFiles/model.dir/model.c.obj"
 },
 {
-  "directory": "C:/Users/ryans/Downloads/assignment/build",
-  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/interactive.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\interactive.dir\\interface.c.obj -c C:\\Users\\ryans\\Downloads\\assignment\\interface.c",
-  "file": "C:/Users/ryans/Downloads/assignment/interface.c",
+  "directory": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/interactive.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\interactive.dir\\interface.c.obj -c \"C:\\Users\\ryans\\OneDrive\\Desktop\\APSC 103 GUI\\ELEC278_final_project\\interface.c\"",
+  "file": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/interface.c",
   "output": "CMakeFiles/interactive.dir/interface.c.obj"
 },
 {
-  "directory": "C:/Users/ryans/Downloads/assignment/build",
-  "command": "C:\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\testrunner.dir\\testrunner.c.obj -c C:\\Users\\ryans\\Downloads\\assignment\\testrunner.c",
-  "file": "C:/Users/ryans/Downloads/assignment/testrunner.c",
+  "directory": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\testrunner.dir\\testrunner.c.obj -c \"C:\\Users\\ryans\\OneDrive\\Desktop\\APSC 103 GUI\\ELEC278_final_project\\testrunner.c\"",
+  "file": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/testrunner.c",
   "output": "CMakeFiles/testrunner.dir/testrunner.c.obj"
 },
 {
-  "directory": "C:/Users/ryans/Downloads/assignment/build",
-  "command": "C:\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\testrunner.dir\\tests.c.obj -c C:\\Users\\ryans\\Downloads\\assignment\\tests.c",
-  "file": "C:/Users/ryans/Downloads/assignment/tests.c",
+  "directory": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\testrunner.dir\\tests.c.obj -c \"C:\\Users\\ryans\\OneDrive\\Desktop\\APSC 103 GUI\\ELEC278_final_project\\tests.c\"",
+  "file": "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/tests.c",
   "output": "CMakeFiles/testrunner.dir/tests.c.obj"
 }
 ]

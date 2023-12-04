@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ryans/Downloads/assignment/testrunner.c" "CMakeFiles/testrunner.dir/testrunner.c.obj" "gcc" "CMakeFiles/testrunner.dir/testrunner.c.obj.d"
-  "C:/Users/ryans/Downloads/assignment/tests.c" "CMakeFiles/testrunner.dir/tests.c.obj" "gcc" "CMakeFiles/testrunner.dir/tests.c.obj.d"
+  "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/testrunner.c" "CMakeFiles/testrunner.dir/testrunner.c.obj" "gcc" "CMakeFiles/testrunner.dir/testrunner.c.obj.d"
+  "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/tests.c" "CMakeFiles/testrunner.dir/tests.c.obj" "gcc" "CMakeFiles/testrunner.dir/tests.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ryans\Downloads\assignment
+CMAKE_SOURCE_DIR = "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ryans\Downloads\assignment\build
+CMAKE_BINARY_DIR = "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testrunner.dir/depend.make
@@ -69,32 +69,32 @@ include CMakeFiles/testrunner.dir/progress.make
 include CMakeFiles/testrunner.dir/flags.make
 
 CMakeFiles/testrunner.dir/testrunner.c.obj: CMakeFiles/testrunner.dir/flags.make
-CMakeFiles/testrunner.dir/testrunner.c.obj: C:/Users/ryans/Downloads/assignment/testrunner.c
+CMakeFiles/testrunner.dir/testrunner.c.obj: C:/Users/ryans/OneDrive/Desktop/APSC\ 103\ GUI/ELEC278_final_project/testrunner.c
 CMakeFiles/testrunner.dir/testrunner.c.obj: CMakeFiles/testrunner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ryans\Downloads\assignment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/testrunner.dir/testrunner.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testrunner.dir/testrunner.c.obj -MF CMakeFiles\testrunner.dir\testrunner.c.obj.d -o CMakeFiles\testrunner.dir\testrunner.c.obj -c C:\Users\ryans\Downloads\assignment\testrunner.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/testrunner.dir/testrunner.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testrunner.dir/testrunner.c.obj -MF CMakeFiles\testrunner.dir\testrunner.c.obj.d -o CMakeFiles\testrunner.dir\testrunner.c.obj -c "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\testrunner.c"
 
 CMakeFiles/testrunner.dir/testrunner.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/testrunner.dir/testrunner.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ryans\Downloads\assignment\testrunner.c > CMakeFiles\testrunner.dir\testrunner.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\testrunner.c" > CMakeFiles\testrunner.dir\testrunner.c.i
 
 CMakeFiles/testrunner.dir/testrunner.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/testrunner.dir/testrunner.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ryans\Downloads\assignment\testrunner.c -o CMakeFiles\testrunner.dir\testrunner.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\testrunner.c" -o CMakeFiles\testrunner.dir\testrunner.c.s
 
 CMakeFiles/testrunner.dir/tests.c.obj: CMakeFiles/testrunner.dir/flags.make
-CMakeFiles/testrunner.dir/tests.c.obj: C:/Users/ryans/Downloads/assignment/tests.c
+CMakeFiles/testrunner.dir/tests.c.obj: C:/Users/ryans/OneDrive/Desktop/APSC\ 103\ GUI/ELEC278_final_project/tests.c
 CMakeFiles/testrunner.dir/tests.c.obj: CMakeFiles/testrunner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ryans\Downloads\assignment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/testrunner.dir/tests.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testrunner.dir/tests.c.obj -MF CMakeFiles\testrunner.dir\tests.c.obj.d -o CMakeFiles\testrunner.dir\tests.c.obj -c C:\Users\ryans\Downloads\assignment\tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/testrunner.dir/tests.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testrunner.dir/tests.c.obj -MF CMakeFiles\testrunner.dir\tests.c.obj.d -o CMakeFiles\testrunner.dir\tests.c.obj -c "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\tests.c"
 
 CMakeFiles/testrunner.dir/tests.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/testrunner.dir/tests.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ryans\Downloads\assignment\tests.c > CMakeFiles\testrunner.dir\tests.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\tests.c" > CMakeFiles\testrunner.dir\tests.c.i
 
 CMakeFiles/testrunner.dir/tests.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/testrunner.dir/tests.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ryans\Downloads\assignment\tests.c -o CMakeFiles\testrunner.dir\tests.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\tests.c" -o CMakeFiles\testrunner.dir\tests.c.s
 
 # Object files for target testrunner
 testrunner_OBJECTS = \
@@ -103,7 +103,7 @@ testrunner_OBJECTS = \
 
 # External object files for target testrunner
 testrunner_EXTERNAL_OBJECTS = \
-"C:/Users/ryans/Downloads/assignment/build/CMakeFiles/model.dir/model.c.obj"
+"C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/build/CMakeFiles/model.dir/model.c.obj"
 
 testrunner.exe: CMakeFiles/testrunner.dir/testrunner.c.obj
 testrunner.exe: CMakeFiles/testrunner.dir/tests.c.obj
@@ -112,7 +112,7 @@ testrunner.exe: CMakeFiles/testrunner.dir/build.make
 testrunner.exe: CMakeFiles/testrunner.dir/linkLibs.rsp
 testrunner.exe: CMakeFiles/testrunner.dir/objects1.rsp
 testrunner.exe: CMakeFiles/testrunner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ryans\Downloads\assignment\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable testrunner.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable testrunner.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testrunner.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/testrunner.dir/clean:
 .PHONY : CMakeFiles/testrunner.dir/clean
 
 CMakeFiles/testrunner.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ryans\Downloads\assignment C:\Users\ryans\Downloads\assignment C:\Users\ryans\Downloads\assignment\build C:\Users\ryans\Downloads\assignment\build C:\Users\ryans\Downloads\assignment\build\CMakeFiles\testrunner.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build" "C:\Users\ryans\OneDrive\Desktop\APSC 103 GUI\ELEC278_final_project\build\CMakeFiles\testrunner.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/testrunner.dir/depend
 

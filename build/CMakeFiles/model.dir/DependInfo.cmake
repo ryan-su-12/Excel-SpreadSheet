@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ryans/Downloads/assignment/model.c" "CMakeFiles/model.dir/model.c.obj" "gcc" "CMakeFiles/model.dir/model.c.obj.d"
+  "C:/Users/ryans/OneDrive/Desktop/APSC 103 GUI/ELEC278_final_project/model.c" "CMakeFiles/model.dir/model.c.obj" "gcc" "CMakeFiles/model.dir/model.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
