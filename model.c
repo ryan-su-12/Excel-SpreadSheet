@@ -56,6 +56,7 @@ void findTypeCell(Cell *cell){
     
 }
 
+/*
 
 int computeFormula(Cell *cell, double *value) {
     double sum = 0;  // Variable to store the sum of cell values
@@ -84,6 +85,8 @@ int computeFormula(Cell *cell, double *value) {
             }
         }
 
+        //implement subtraction for cells 
+
         oldie = plus;  // Update the starting position for the next iteration
         double sellValue;
 
@@ -97,6 +100,55 @@ int computeFormula(Cell *cell, double *value) {
     *value = sum;  // Store the final sum in the 'value' variable
     return 1;      // Return 1 to indicate successful computation
 }
+
+*/
+
+int computeFormula(Cell *cell, double *value) {
+    double result = 0;   // Variable to store the result of cell values
+    double sellValue = 0; // Variable to store the value of the current cell reference
+    int oldie = 1;       // Index to keep track of the starting position of the current cell value
+    int plus = 0;        // Index to find the position of the next '+' or '-' character in the cell content
+    int isAddition = 1;  // Flag to indicate whether the current operation is addition (1) or subtraction (0)
+
+    // Iterate through the cell content until the end is reached
+    while ((*cell).cellContent.text[plus] != '\0') {
+        char sell[3];  // Array to store the characters representing the current cell reference
+
+        // Find the position of the next '+' or '-' character or the end of the cell content
+        for (int i = plus + 1; 1; i++) {
+            if ((*cell).cellContent.text[i] == '+' || (*cell).cellContent.text[i] == '-' || (*cell).cellContent.text[i] == '\0') {
+                plus = i;
+                break;
+            }
+        }
+
+        // Take the characters representing the current cell reference
+        for (int i = oldie; i < plus; i++) {
+            if ((*cell).cellContent.text[i] != ' ' && (*cell).cellContent.text[i] != '+' && (*cell).cellContent.text[i] != '-') {
+                sell[0] = (*cell).cellContent.text[i];
+                sell[1] = (*cell).cellContent.text[i + 1];
+                sell[2] = (*cell).cellContent.text[i + 2];
+                break;
+            }
+        }
+
+        oldie = plus;  // Update the starting position for the next iteration
+
+        // Call the 'getValue' function to get the number value of the current cell "sell"
+        if (!getValue(sell, &sellValue))
+            return 0;  // Return 0 if 'getValue' fails
+
+        // Perform addition or subtraction based on the flag
+        result += (isAddition) ? sellValue : -sellValue;
+
+        // Update the flag for the next iteration
+        isAddition = ((*cell).cellContent.text[plus] == '+') ? 1 : 0;
+    }
+
+    *value = result;  // Store the final result in the 'value' variable
+    return 1;         // Return 1 to indicate successful computation
+}
+
 
 
 int getValue(char *text, double *value ){
@@ -195,7 +247,7 @@ char *cellText(Cell* cell) {
 void updateFormulas() {
     for (int row = 0; row < MAX_ROWS; ++row) {
         for (int col = 0; col < MAX_COLS; ++col) {
-            
+
             //check if the cell contains a formula
             if(cells[row][col].cellType == Formula) {
                 update_cell_display(row,col, cellText(&(cells[row][col])));
