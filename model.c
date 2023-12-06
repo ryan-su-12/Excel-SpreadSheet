@@ -56,8 +56,7 @@ void findTypeCell(Cell *cell){
     
 }
 
-/*
-
+/* Old computeFormula for addion
 int computeFormula(Cell *cell, double *value) {
     double sum = 0;  // Variable to store the sum of cell values
     int oldie = 1;    // Index to keep track of the starting position of the current cell value
@@ -85,7 +84,7 @@ int computeFormula(Cell *cell, double *value) {
             }
         }
 
-        //implement subtraction for cells 
+        
 
         oldie = plus;  // Update the starting position for the next iteration
         double sellValue;
@@ -100,9 +99,9 @@ int computeFormula(Cell *cell, double *value) {
     *value = sum;  // Store the final sum in the 'value' variable
     return 1;      // Return 1 to indicate successful computation
 }
-
 */
 
+// compute formula with addition and subtraction
 int computeFormula(Cell *cell, double *value) {
     double result = 0;   // Variable to store the result of cell values
     double sellValue = 0; // Variable to store the value of the current cell reference
@@ -112,7 +111,7 @@ int computeFormula(Cell *cell, double *value) {
 
     // Iterate through the cell content until the end is reached
     while ((*cell).cellContent.text[plus] != '\0') {
-        char sell[3];  // Array to store the characters representing the current cell reference
+        char* sell;  // Array to store the characters representing the current cell reference
 
         // Find the position of the next '+' or '-' character or the end of the cell content
         for (int i = plus + 1; 1; i++) {
@@ -125,9 +124,7 @@ int computeFormula(Cell *cell, double *value) {
         // Take the characters representing the current cell reference
         for (int i = oldie; i < plus; i++) {
             if ((*cell).cellContent.text[i] != ' ' && (*cell).cellContent.text[i] != '+' && (*cell).cellContent.text[i] != '-') {
-                sell[0] = (*cell).cellContent.text[i];
-                sell[1] = (*cell).cellContent.text[i + 1];
-                sell[2] = (*cell).cellContent.text[i + 2];
+                sell = &(*cell).cellContent.text[i];
                 break;
             }
         }
@@ -169,8 +166,34 @@ int getValue(char *text, double *value ){
         col = 5;
     } else if (text[0] == 'G'){
         col = 6;
-    } else{
-        return 0;
+    } else{ // not a cell index
+        // Check if it is a number
+        char* textCopy = (char*)malloc(sizeof(char) * strlen(text));
+        strcpy(textCopy, text);
+        for (int i = 0; textCopy[i] != '\0'; i ++) {
+            if (textCopy[i] == '+' || textCopy[i] == '-') {
+                textCopy[i] = '\0';
+            }
+        }
+        double temp = atof(textCopy); // Gives us the value but no indication of if it is accurate
+    
+        if (temp == 0.0) {
+            // Could be a zero, or invalid text
+            int decimalPointCount = 0;
+            int i = 0;
+            // do while loop iterates through the text 
+            do {
+                if (textCopy[i] == '.') decimalPointCount++; // just to see the # of decmials being counted
+
+                else if(textCopy[i] != '0' || decimalPointCount > 1) { // if the index of the text is not equal to 0 we automatically know its text, 
+                // if the decimal counter is greater than 1 it also means it is text since there cannont be 2 decimals in a number
+                    return 0;
+                }
+                i ++;
+            } while(textCopy[i+1] != '\0'); // do this 
+        }
+        *value = temp;
+        return 1;
     }
 
     // rows are assigned to numbers on the spreadsheet
